@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GojekParkingLotConsole", "GojekParkingLotConsole\GojekParkingLotConsole.csproj", "{D997F8A5-72D4-4490-BC68-98157C75B8FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GojekParkingLotBLL", "GojekParkingLotBLL\GojekParkingLotBLL.csproj", "{6ACBAA61-0770-4F16-A0BF-E57E9A400ABF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GojekParkingLotDAL", "GojekParkingLotDAL\GojekParkingLotDAL.csproj", "{2C8463CD-A43E-40F8-8C4A-45C4AD3E646B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D997F8A5-72D4-4490-BC68-98157C75B8FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D997F8A5-72D4-4490-BC68-98157C75B8FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D997F8A5-72D4-4490-BC68-98157C75B8FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D997F8A5-72D4-4490-BC68-98157C75B8FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ACBAA61-0770-4F16-A0BF-E57E9A400ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ACBAA61-0770-4F16-A0BF-E57E9A400ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ACBAA61-0770-4F16-A0BF-E57E9A400ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ACBAA61-0770-4F16-A0BF-E57E9A400ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C8463CD-A43E-40F8-8C4A-45C4AD3E646B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C8463CD-A43E-40F8-8C4A-45C4AD3E646B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C8463CD-A43E-40F8-8C4A-45C4AD3E646B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C8463CD-A43E-40F8-8C4A-45C4AD3E646B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44724455-35E3-42E1-9BC0-8411C7EB2DA4}
+	EndGlobalSection
+EndGlobal

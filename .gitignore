@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Ecomindo.Riset.DKatalis/.vs/Ecomindo.Riset.DKatalis/v16
+/Ecomindo.Riset.DKatalis/GojekParkingLotBLL/obj
+/Ecomindo.Riset.DKatalis/GojekParkingLotConsole/obj
+/Ecomindo.Riset.DKatalis/GojekParkingLotDAL/obj
