@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GojekParkingLot.BLL", "Goje
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GojekParkingLot.DAL", "GojekParkingLotDAL\GojekParkingLot.DAL.csproj", "{2C8463CD-A43E-40F8-8C4A-45C4AD3E646B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GojekParkingLot.Tests", "GojekParkingLotTests\GojekParkingLot.Tests.csproj", "{ACFABC90-836D-478C-B964-A92431E4229D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GojekParkingLot.Tests", "GojekParkingLotTests\GojekParkingLot.Tests.csproj", "{ACFABC90-836D-478C-B964-A92431E4229D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

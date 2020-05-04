@@ -1,14 +1,14 @@
 ﻿using GojekParkingLot.BLL;
-using Xunit;
-[assembly: CollectionBehavior(DisableTestParallelization = true)]
+using NUnit.Framework;
 
 namespace GojekParkingLot.Tests
 {
     public class ParkingServiceFact
     {
+        [TestFixture]
         public class CreateParkingLot
         {
-            [Fact]
+            [Test]
             public void SuccessfullyCreatedALot()
             {
                 ParkingService svc = new ParkingService();
@@ -16,7 +16,7 @@ namespace GojekParkingLot.Tests
                 Assert.Equal($"Created a parking lot with {lotNumber} slots\n", svc.CreateParkingLot(lotNumber));
             }
 
-            [Fact]
+            [Test]
             public void InsertNonNumberValue()
             {
                 ParkingService svc = new ParkingService();
@@ -27,7 +27,7 @@ namespace GojekParkingLot.Tests
 
         public class GetSlotNumberByRegistrationNumber
         {
-            [Fact]
+            [Test]
             public void NotFound()
             {
                 ParkingService svc = new ParkingService();
@@ -36,7 +36,7 @@ namespace GojekParkingLot.Tests
                 Assert.Equal("Not found\n", svc.GetSlotNumberByRegistrationNumber("REG-01"));
             }
 
-            [Fact]
+            [Test]
             public void OneFound()
             {
                 ParkingService svc = new ParkingService();
@@ -50,7 +50,7 @@ namespace GojekParkingLot.Tests
 
         public class GetSlotNumbersByColour
         {
-            [Fact]
+            [Test]
             public void NotFound()
             {
                 ParkingService svc = new ParkingService();
@@ -59,7 +59,7 @@ namespace GojekParkingLot.Tests
                 Assert.Equal("Not found\n", svc.GetSlotNumbersByColour("White"));
             }
 
-            [Fact]
+            [Test]
             public void OneFound()
             {
                 ParkingService svc = new ParkingService();
@@ -70,7 +70,7 @@ namespace GojekParkingLot.Tests
                 Assert.Equal("1\n", svc.GetSlotNumbersByColour("White"));
             }
 
-            [Fact]
+            [Test]
             public void TwoDataFound()
             {
                 ParkingService svc = new ParkingService();
@@ -84,7 +84,7 @@ namespace GojekParkingLot.Tests
 
         public class GetRegistrationNumbersByColour
         {
-            [Fact]
+            [Test]
             public void NotFound()
             {
                 ParkingService svc = new ParkingService();
@@ -93,7 +93,7 @@ namespace GojekParkingLot.Tests
                 Assert.Equal("Not found\n", svc.GetRegistrationNumbersByColour("White"));
             }
 
-            [Fact]
+            [Test]
             public void OneFound()
             {
                 ParkingService svc = new ParkingService();
@@ -104,7 +104,7 @@ namespace GojekParkingLot.Tests
                 Assert.Equal("REG-01\n", svc.GetRegistrationNumbersByColour("White"));
             }
 
-            [Fact]
+            [Test]
             public void TwoDataFound()
             {
                 ParkingService svc = new ParkingService();
@@ -118,7 +118,7 @@ namespace GojekParkingLot.Tests
 
         public class GetStatus
         {
-            [Fact]
+            [Test]
             public void GetStatusOneData()
             {
                 ParkingService svc = new ParkingService();
@@ -131,7 +131,7 @@ namespace GojekParkingLot.Tests
                 Assert.Equal(result, svc.GetStatus());
             }
 
-            [Fact]
+            [Test]
             public void GetStatusNoData()
             {
                 ParkingService svc = new ParkingService();
@@ -142,7 +142,7 @@ namespace GojekParkingLot.Tests
 
         public class Leave
         {
-            [Fact]
+            [Test]
             public void SuccessfullyLeave()
             {
                 ParkingService svc = new ParkingService();
@@ -152,7 +152,7 @@ namespace GojekParkingLot.Tests
                 Assert.Equal($"Slot number 1 is free\n", svc.Leave("1"));
             }
 
-            [Fact]
+            [Test]
             public void InsertNonNumberValue()
             {
                 ParkingService svc = new ParkingService();
@@ -164,7 +164,7 @@ namespace GojekParkingLot.Tests
 
         public class Park
         {
-            [Fact]
+            [Test]
             public void SuccessfullyParked()
             {
                 ParkingService svc = new ParkingService();
@@ -173,7 +173,7 @@ namespace GojekParkingLot.Tests
                 Assert.Equal($"Allocated slot number: 1\n", svc.Park("1", "1"));
             }
 
-            [Fact]
+            [Test]
             public void ParkingFull()
             {
                 ParkingService svc = new ParkingService();
