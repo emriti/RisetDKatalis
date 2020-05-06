@@ -21,17 +21,17 @@ parking_lot $ bin/parking_lot
 **Command list**
 
 * ```>> create_parking_lot [capacity]```
-Initialization of parking lot with parameters of slot capacity. This command must be run first to initialize the parking lot.
+Initialization of a parking lot with parameters of slot capacity. This is the first command that must be run to initialize the parking lot.
 
-* ```>> park [car_registration_number] [car_color]```
-The parking car in available slot with identity of registration number and color.
-If success, program will print ```Allocated slot number: [nearest_slot_number]```. If failed,
-(parking lot is full, slot already filled) will print ```Sorry, parking lot is full```
+* ```>> park [car_registration_number]```
+Parking a car in an available slot with registration number as the identification.
+If successfully parked, the program will print ```Allocated slot number: [nearest_slot_number]```. If failed,
+(parking lot is full) it will print ```Sorry, parking lot is full```. The application ensure that a car will have unique identification number, if any car parked with same id it will print ```Data has already exists!```.
 
-* ```>> leave [slot_number]```
-The slot is available again after the car leaves the parking lot (give the entrance ticket) so that the slot can be occupied by the another car will park.
+* ```>> leave [car_registration_number] [hours]```
+The slot is be available after a car leaves the parking lot (using car registration number) so that the slot can be occupied by another car. When leaving the system will calculate the fee for parking the car, with formulation $10 for first 2 hours and $10 for every additional hour. The system also has a validation to ensure that a car leave registered in the system. If the system does not found the car it will print ```Registration number [car_registration_number] not found```.
 
 * ```>> status```
 For print parking area status in table format.
-```Slot No.    Registration No     Colour```
+```Slot No.    Registration No     ```
 
